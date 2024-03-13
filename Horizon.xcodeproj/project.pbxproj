@@ -11,6 +11,7 @@
 		836A3A5D2BA0E31100A33A6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A3A5C2BA0E31100A33A6A /* ContentView.swift */; };
 		836A3A5F2BA0E31400A33A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836A3A5E2BA0E31400A33A6A /* Assets.xcassets */; };
 		836A3A622BA0E31400A33A6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836A3A612BA0E31400A33A6A /* Preview Assets.xcassets */; };
+		836A3A6A2BA0E33900A33A6A /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = 836A3A692BA0E33900A33A6A /* Vortex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836A3A6A2BA0E33900A33A6A /* Vortex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Horizon;
+			packageProductDependencies = (
+				836A3A692BA0E33900A33A6A /* Vortex */,
+			);
 			productName = Horizon;
 			productReference = 836A3A572BA0E31100A33A6A /* Horizon.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 836A3A4E2BA0E31100A33A6A;
+			packageReferences = (
+				836A3A682BA0E33800A33A6A /* XCRemoteSwiftPackageReference "Vortex" */,
+			);
 			productRefGroup = 836A3A582BA0E31100A33A6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		836A3A682BA0E33800A33A6A /* XCRemoteSwiftPackageReference "Vortex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Vortex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		836A3A692BA0E33900A33A6A /* Vortex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 836A3A682BA0E33800A33A6A /* XCRemoteSwiftPackageReference "Vortex" */;
+			productName = Vortex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 836A3A4F2BA0E31100A33A6A /* Project object */;
 }
